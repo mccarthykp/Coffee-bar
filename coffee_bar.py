@@ -1,4 +1,4 @@
-from person import Amy, Bob, Cat
+from person import Person
 
 class CoffeeBar():
   def __init__(self, name):
@@ -14,8 +14,13 @@ class CoffeeBar():
 
 
 if __name__ == "__main__":
+  Amy = Person('Amy', 'Coffee')
+  Bob = Person('Bob', 'Tea')
+  Cat = Person('Cat', 'Milk')
   CoffeeEmporium = CoffeeBar('Coffee Emporium')
 
   CoffeeEmporium.place_order(Amy.my_order())
   CoffeeEmporium.place_order(Bob.my_order())
   CoffeeEmporium.place_order(Cat.my_order())
+
+  CoffeeEmporium.process_orders()
