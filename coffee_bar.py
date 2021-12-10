@@ -11,6 +11,7 @@ class CoffeeBar():
     self.order_list.append(order)
 
   def process_orders(self):
+    print(self.barista.greeting)
     for order in self.order_list:
       print(order.to_string())
 
