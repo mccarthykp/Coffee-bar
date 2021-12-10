@@ -20,6 +20,7 @@ class CoffeeBar():
       print(order.to_string())
 
       if order.drink_type == 'Coffee':
+        # error here -- order.person == str and not Object? 
         order.person.wallet -= self.milk
 
       # if order.drink_type == 'Coffee':
