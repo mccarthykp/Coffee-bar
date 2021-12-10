@@ -1,3 +1,4 @@
+from barista import Barista
 from person import Person
 
 class CoffeeBar():
@@ -17,6 +18,7 @@ if __name__ == "__main__":
   Amy = Person('Amy', 'Coffee')
   Bob = Person('Bob', 'Tea')
   Cat = Person('Cat', 'Milk')
+  Kevin = Barista('Kevin', 'Cold Brew', 'Hey dude!')
   CoffeeEmporium = CoffeeBar('Coffee Emporium')
 
   CoffeeEmporium.place_order(Amy.my_order())
